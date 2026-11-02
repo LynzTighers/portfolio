@@ -20,6 +20,9 @@ export default function Dossier() {
             <div><dt>Role</dt><dd>{agent.agentClass}</dd></div>
             <div><dt>Specialty</dt><dd>{agent.role}</dd></div>
             {agent.origin && <div><dt>Origin</dt><dd>{agent.origin}</dd></div>}
+            {agent.facts.map((f) => (
+              <div key={f.label}><dt>{f.label}</dt><dd>{f.value}</dd></div>
+            ))}
           </dl>
         </div>
 

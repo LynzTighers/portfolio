@@ -964,8 +964,21 @@ button {
     max-width: 360px;
   }
 
+  /* long skill list: pin the inspector to the bottom so it stays in view */
   .inspect {
-    position: static;
+    top: auto;
+    bottom: 0;
+    z-index: 5;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 -12px 24px rgba(15, 25, 35, 0.8);
+  }
+
+  .inspect h3 {
+    font-size: 1.8rem;
+  }
+
+  .inspect p {
+    margin: 0.4rem 0 0.75rem;
   }
 
   .match__row {
