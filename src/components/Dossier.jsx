@@ -16,9 +16,10 @@ export default function Dossier() {
             <span>{agent.callsign.slice(0, 2)}</span>
           </div>
           <dl className="dossier__facts">
-            <div><dt>Real name</dt><dd>{agent.name}</dd></div>
+            {agent.name && <div><dt>Real name</dt><dd>{agent.name}</dd></div>}
             <div><dt>Role</dt><dd>{agent.agentClass}</dd></div>
-            <div><dt>Origin</dt><dd>{agent.origin}</dd></div>
+            <div><dt>Specialty</dt><dd>{agent.role}</dd></div>
+            {agent.origin && <div><dt>Origin</dt><dd>{agent.origin}</dd></div>}
           </dl>
         </div>
 

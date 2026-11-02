@@ -13,10 +13,17 @@ export default function Contact() {
           Open to internships, junior roles and interesting side quests. Send an invite and I'll queue up.
         </p>
         <div className="invite__actions">
-          <a href={`mailto:${email}`} className="btn btn--primary">
-            <span>Send Invite</span>
-          </a>
-          <a href={github} target="_blank" rel="noreferrer" className="btn btn--ghost">
+          {email && (
+            <a href={`mailto:${email}`} className="btn btn--primary">
+              <span>Send Invite</span>
+            </a>
+          )}
+          <a
+            href={github}
+            target="_blank"
+            rel="noreferrer"
+            className={`btn ${email ? 'btn--ghost' : 'btn--primary'}`}
+          >
             <span>GitHub</span>
           </a>
           {resume && (

@@ -1,12 +1,12 @@
 // Everything the site shows lives in this file. Edit here, not in the components.
-// Lines marked TODO are placeholders for you to fill in.
+// Lines marked TODO are optional: anything left as '' is hidden on the site.
 
 export const agent = {
   callsign: 'LynzTighers',
-  name: 'Your Name', // TODO: your real name
+  name: '', // TODO: your real name
   role: 'Full-Stack Developer',
   agentClass: 'Initiator', // Duelist / Initiator / Controller / Sentinel: pick your vibe
-  origin: 'Your City', // TODO: where you're based
+  origin: '', // TODO: where you're based
   tagline: 'I break things open to see how they work, then build my own.',
   bio: [
     'Developer who learns by shipping: a live bakery site with its own API, a co-op mod for a game I love, and a hardware capstone that has to survive a real chicken coop.',
@@ -14,7 +14,7 @@ export const agent = {
   ],
   links: {
     github: 'https://github.com/LynzTighers',
-    email: 'you@example.com', // TODO: your contact email
+    email: '', // TODO: your contact email
     resume: '', // TODO: link to a PDF, e.g. '/resume.pdf' in public/
   },
 }
