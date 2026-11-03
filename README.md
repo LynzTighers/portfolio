@@ -1,4 +1,4 @@
-# Portfolio
+# Valorant Portfolio
 
 Personal developer portfolio styled like a tactical-shooter game menu. Built with React and Vite, no UI library.
 
